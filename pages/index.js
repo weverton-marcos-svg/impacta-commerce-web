@@ -35,6 +35,7 @@ export default function Home() {
             height={38}
             priority
           />
+          <h1>Bem vindo ao impacta-commerce</h1>
           <ol>
             <li>
               Get started by editing <code>pages/index.js</code>.
