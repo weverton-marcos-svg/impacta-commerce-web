@@ -1,4 +1,4 @@
-import { queryProducts } from "../api/api";
+import { queryProducts } from "../Api/api";
 
 function SearchBar(props) {
   const [query, setQuery] = useState("");
