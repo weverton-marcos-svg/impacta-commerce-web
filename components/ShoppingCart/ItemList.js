@@ -1,24 +1,24 @@
 import Item from "./Item";
 
-function ItemList(props) {
+function ItemsList(props) {
+  
+  function onQuantityChanged(ev) {
+    props.onQuantityChanged(ev);
+  }
 
-    function onQuantityChanged(ev) {
-        props.onQuantityChanged(ev);
-    }
+  let rows = [];
 
-    let rows = [];
+  props.products.forEach((product, index) => {
+    rows.push(
+      <Item
+        key={index}
+        product={product}
+        onQuantityChanged={onQuantityChanged}
+      />
+    );
+  });
 
-    props.products.forEach((product,index) => {
-        rows.push(
-            <Item
-                key={index}
-                product={product}
-                onQuantityChanged={onQuantityChanged}
-            />
-        );
-    });
-
-    return <div>{rows}</div>
+  return <div>{rows}</div>;
 }
 
-export default ItemList;
+export default ItemsList;
