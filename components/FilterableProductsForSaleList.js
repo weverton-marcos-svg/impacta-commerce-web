@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { queryProducts } from "../libs/api";
-import { currency } from "../libs/formatters";
+import { queryProducts } from "../Libs/api";
+import { currency } from "../Libs/formatters";
 
 function Installment(props) {
   const fees = props.installment.hasFee ? "com juros" : "sem juros";

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { currency } from "../libs/formatters";
+import { currency } from "../Libs/formatters";
 
 function OrderHead() {
   return (
@@ -33,7 +33,7 @@ function OrderRow(props) {
 }
 
 function OrderTable(props) {
-  const rows = props.orders.map((order) => <OrderRow order={order} />);
+  const rows = props.orders.map((order) => <OrderRow order={order} key={index}/>);
 
   return (
     <table className="table table-bordered table-responsive">

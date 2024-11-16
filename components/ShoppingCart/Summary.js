@@ -1,5 +1,5 @@
 
-import { currency } from "../../libs/formatters";
+import { currency } from "../../Libs/formatters";
 
 function Summary(props) {
   const subtotal = props.products

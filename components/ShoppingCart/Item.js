@@ -1,5 +1,5 @@
 import ItemQuantity from "./ItemQuantity";
-import { currency } from "../../libs/formatters";
+import { currency } from "../../Libs/formatters";
 
 function Item(props) {
   const defaultProductImage = "https://via.placeholder.com/150";
